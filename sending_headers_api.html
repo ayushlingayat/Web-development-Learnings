@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sending Headers with API Request , Passing Headers Within axios request</title>
+</head>
+<body>
+    <h1>Sending Headers with API Request</h1>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script>
+        let url = 'https://icanhazdadjoke.com/';
+
+
+        async function getJokes(){
+
+        
+
+        try{
+            let config = {headers :{Accept : "application/json"}};
+            let res = await axios.get(url , config);
+            console.log(res.data.joke);
+
+            let h1 = document.querySelector('h1');
+            h1.innerHTML = res.data.joke;
+        
+        }
+        catch(err){
+            console.log(err)
+        }
+
+    }
+        
+
+       
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Using Async and Await</title>
+</head>
+<body>
+    <h1>Fetch Using Async and Await</h1>
+    <script>
+        let url = 'https://catfact.ninja/fact'
+        
+
+        async function getUrl(){
+
+            try {
+            let res = await fetch(url);
+            let resp_json = await res.json();
+            console.log(resp_json.fact);
+
+            let res2 = await fetch(url);
+            let resp_json2 = await res2.json();
+            console.log(resp_json2.fact);
+
+            let res3 = await fetch(url);
+            let resp_json3 = await res3.json();
+            console.log(resp_json3.fact);
+        }
+        catch(error){
+            console.log(error);
+        }
+
+        console.log('All Good 🐯');
+
+
+        }
+
+
+        
+
+    </script>
+</body>
+</html>

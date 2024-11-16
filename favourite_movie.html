@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite Movie</title>
+</head>
+<body>
+    <script>
+        let favourite_movie = "Bhai";
+
+        let guessMovie = prompt('Guess your Favourite Movie');
+
+        while((favourite_movie != guessMovie) && ( guessMovie != "quit")){
+            console.log('Your Guess is wrong please try again');
+        }
+
+        if(guessMovie == favourite_movie){
+            console.log('Congratulations !');
+        }
+        else if(guessMovie == "quit"){
+            console.log("You quited the game and its like failure");
+        }
+    </script>
+</body>
+</html>

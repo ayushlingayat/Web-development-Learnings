@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in css</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        .main-container{
+            display:grid;
+            grid-template-areas: "nav nav nav"
+                                 "side article scam"
+                                 "footer footer footer";
+            /* Here we are giving the naming convection to template areas  */
+            /* Yaha mein naam dera huu sarre section kee soo that meko yee badmein use karte ayye okk naa */
+            
+        }
+        .box{
+            /* width: 60px; */
+            height:60px;
+            margin:3px 3px;
+            background-color: rgb(255, 185, 94);
+        }
+
+        
+        #box1{
+           grid-area:nav;
+           background-color: red;
+        }  
+        #box2{
+           grid-area:side;
+           background-color: rgb(132, 0, 255);
+        }  
+        #box3{
+           grid-area:article;
+           background-color: rgb(255, 244, 34);
+        }  
+        #box4{
+           grid-area:footer;
+           background-color: rgb(255, 54, 215);
+        }  
+        #box5{
+           grid-area:scam;
+           background-color: rgb(255, 134, 28);
+        }  
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+    </div>
+</body>
+</html>

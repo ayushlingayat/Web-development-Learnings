@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design card in Html</title>
+    <style>
+        :root{
+            --font-style:arial;
+        }
+        *{
+            margin:0px;
+            padding:0px;
+
+        }
+        body{
+            background-color: black;
+        }
+        .container{
+            width: 22vw;
+            height: 80vh;
+            /* border:2px solid grey; */
+            background-color:rgb(246 246 246);
+            margin:auto;
+            margin-top:70px;
+        }
+        .card-container{
+            width: 17vw;
+            height: 75vh;
+            border:1px solid rgb(168, 168, 168);
+            margin-top:15px;
+            margin-left:38px;
+            margin-right: 104px;
+            border-radius: 15px;
+            background-color: white;
+            position: absolute;
+        }
+        .img-styling{
+            position: relative;
+            left:8px;
+            top:5px;
+            border-radius: 15px;
+            height: 194px;
+            width: 245px 
+        }
+
+        .span-elem{
+            margin: 12px 10px;
+        }
+        .sp{
+            border: 1px solid rgb(226, 226, 226);
+            border-radius: 15px;
+            margin-right: 15px;
+        }
+
+        .my-h2{
+           font-family: var(--font-style);
+           text-align: center;
+           margin-bottom: 7px;
+        }
+        .para{
+            display: block;
+            width: 240px;
+            margin:auto;
+        }
+        .btn{
+            position: relative;
+            margin-top: 12px;
+            color: skyblue;
+            background-color: aliceblue;
+            border-radius: 13px;
+            padding: 10px;
+            cursor: pointer;
+            margin-left: 70px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card-container">
+            <img src="https://source.unsplash.com/random/200x200?sig=1"class="img-styling" alt="random images">
+            <div class="span-elem">
+                <span class="sp">Nature</span>
+                <span class="sp">Lake</span>
+            </div>
+            <h2 class="my-h2">Lago de beris</h2>
+            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, adipisci fuga esse ducimus tempora dolore sunt rem et, qui dicta harum veniam, minima maiores ut amet dolorem. Exercitationem qui temporibus architecto! Sint, soluta accusantium?</p>
+            <button class="btn">Read More</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit Html Property</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+
+        img{
+            height: 200px;
+            width: 200px;
+
+            /* object-fit: fill; */
+            /* object fit chi default property object-fit: aste image full diste ann distorted diste okk samjle naa */
+
+
+            object-fit: cover;
+            /* haa cover karel okk img chya widht ann height laa okk */
+            /* such that aspect ratio maintain rahil tase okk  */
+            /* ethe properly crop vagere hun image cover hoti according to img widht and height */
+
+
+            /* atta object fit cover madhe cover karnyasathi konchya side laa crop kel pahije yaa sathi property aste okk lets see */
+            /*Yaa property laa object-position ashe manta okk ethe side che naav deyach okk  */
+            object-position:top left;
+
+
+            /* object position x y direction madhe pnn chalti using the pixel okk lavkr shikun gya hee */
+            /* yech syntax hee ahe  */
+            
+            
+            
+            /* object-position: 10px 23px; */
+            /* first 10px x axis madhe ann second 23px y axis madhe lets go  */
+
+
+
+
+            /* This is again one property */
+            /* object-fit:contain; */
+
+
+
+            /* object-fit: scale-down; */
+            /* Object fit scale down pnn aste jyani image chi size kami hun jati okk jast use nhi krt but mahit trr pahije naa */
+
+            /* image purni dakva okk haa hee dakvto  */
+            /* ann jaga dakvun dya  */
+            /* hee full image show karnyasathi use hote ann aspect ratio pnn maintain hoil okk */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="dogy.jpg" alt="random images" />
+    </div>
+</body>
+</html>

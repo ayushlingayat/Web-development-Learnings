@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .container{
+            width: 70vw;
+            height: 60vh;
+            background-color: greenyellow;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .box{
+            width: 40px;
+            height: 40px;
+            background-color: red;
+
+
+            /* Animation ethe deyach ahe  bruh */
+            /* animation che pnn khup sarre properties asta okk  */
+            animation:ayukaAnimation;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            /* animation-iteration-count: 2; */
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.42, 0, 0, 0.98);
+            /* animation-direction: alternate-reverse; */
+            animation-play-state:running;
+
+
+            /* multiple animation use karne hoo toh comma seprated values use krr sakhte hee hum  */
+            animation:ayukaAnimation 2s ease-in-out 3s 1 ,
+                      ayuDegree 3s ease-in-out 3s 1;
+        }
+
+
+        @keyframes ayukaAnimation{
+            from{
+
+            }
+            to{
+                transform:translateX(555px);
+            }
+        }
+
+
+        /* Animation hum naa multiple banu shakto okk hee smajun gee tuu ekda trr */
+        @keyframes ayuDegree{
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform:rotate(200deg);
+            }
+            50%{
+                transform:rotate(230deg);
+            }
+            80%{
+                transform:rotate(300deg);
+            }
+            100%{
+                transform:rotate(320deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <!-- simple animation kee liye naa transition use karna okk aur complex kee liye naa animation use krr naa okk -->
+    </div>
+</body>
+</html>

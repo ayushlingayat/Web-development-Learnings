@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries in Html</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color:#fff;
+        }
+
+        .boxes{
+            display: flex;
+        }
+
+        .box{
+            width:200px;
+            height: 200px;
+            border:2px solid steelblue;
+            background-color: rgb(0, 0, 0);
+            margin:14px;
+        }
+
+        /* Now i will use the media queries here  */
+
+        /* @media only screen and (max-width:455px){ */
+
+            /* 455 px seeh chota hua bhai yee toh yee style lagega bruh  */
+            /* 455px seeh bada hua toh style nhi lagege  */
+            /* body{
+                background-color: blue;
+            }
+        } */
+
+        @media only screen and (min-width:455px){
+            body{
+                background-color:rgb(67, 192, 255);
+        }
+            h1{
+                color:rgb(0, 0, 0);
+        }
+    }
+
+
+        @media only screen and (max-width:455px){
+           .boxes{
+            flex-direction: column;
+           }
+    }
+        @media  screen and (orientation: portrait){
+           body{
+            border:2px solid orange;
+           }
+    }
+
+    /* 455px seeh bada hua px toh yeeh style apply hoga aur nhi raha yee toh style nhi apply hoga simple  */
+    </style>
+</head>
+<body>
+    <h1>Hii Bolte chalo public koo</h1>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

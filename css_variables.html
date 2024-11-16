@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in Css</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+           
+        }
+        :root {
+            /* This are globally declared variables in Css */
+            --color:rgb(223, 122, 34);
+            --fontSize: 16px;
+        }
+
+        header{
+            border:2px solid black;
+            height: 45px;
+        }
+        ul{
+            display: flex;
+            gap:45px;
+        }
+        ul li{
+            list-style:none;
+            padding:5px 10px;
+        }
+        ul li:first-child{
+            /* Use this in var function in the css */
+            --color: rgb(76, 154, 231);   
+            /* This is called as local variable in css  */
+            color:var(--color); 
+            font-size:var(--fontSize);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Section</li>
+                <li>Services</li>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>

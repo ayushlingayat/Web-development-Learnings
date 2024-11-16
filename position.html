@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property practice in css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parent-box{
+            border:2px solid red;
+            padding:34px;
+            margin: 20px 23px;
+            position: absolute;
+            height: 1999px;
+        }
+        .box{
+            width: 1200px;
+            height: 200px;
+            border:2px solid black;
+            padding: 23px 12px;
+            /* display: inline-block; */
+        }
+        .box1{
+            background-color: blue;
+            /* position: absolute;
+            top:0px;
+            z-index: 1;   */
+            /* Higher z-index always front mein rehta okk */
+        }
+        .box2{
+            background-color: greenyellow;
+            /* position: relative;
+            top:10px;
+            left:0px;
+            z-index: 0; */
+            /* lower z-index humesha peeche rehta okk */
+        }
+        .box3{
+           background-color: pink;
+           position:sticky;
+           top:0px;
+        }
+        .box4{
+            background-color: indianred;
+            position: fixed;
+            left:50px;
+            bottom:0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-box">
+        <div class="box box1"></div>
+        <!-- relative => relative to its normal position  -->
+        <!-- agar purani position mein gap chahiye go for relative  -->
+        <!-- Absolute lagta hee nearest position ancestors okk  -->
+        <!-- absolute kay karta hee pata hee vooh check karta agar parent kii postion set hee bss static nhi honi chahiye uske according left right top bottom move hoga  -->
+        <!-- Parent koo check karta yee absolute -->
+        <!-- sticky => scrool karte tab chipak jata 
+        fixed => dival mein jese gadda karke chipka tee vesa okk  -->
+
+
+
+        <!-- This is an Exception -->
+        <!-- transform filter or perspective properties can also make an element appear as positioned -->
+        <!-- transform:translate(0); -->
+        <!-- filter:invert(0); -->
+        <!-- perspective:0em; -->
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in css</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        .main-container{
+            display:grid;
+            grid-template-columns: [first]120px [second] 100px [third];   
+            /* width of  2 column */
+            /* Yeeh bata tha yee kii mere grid mein 2 column hoge ek 100px kaa dusra bhi 100px kaa okk  width kaa*/
+            grid-template-rows: 100px 100px 100px;
+            /* Height of 2 columns */
+            /* Isne sarre rows kii height specify kii hee okk kii 100 hona jake inspect mein dekho */
+        }
+        .box{
+            width: 60px;
+            height:60px;
+            margin:3px 3px;
+            background-color: rgb(255, 185, 94);
+        }
+
+        #box4{
+            grid-row:1/2;   
+            /* Verical check for row */
+            grid-column: 1/2;
+            /*  Horizontal check for column*/
+        }  
+        #box1{
+            background-color: rgb(255, 25, 0);
+            grid-row:1/2;   
+            /* iska matlab hee one seeh lekar 2 tak row occupy kare */
+            /* Verical check for row */
+            grid-column: 1/2;
+            /* iska matlab hee one seeh leke two tak column occupy kare */
+            grid-column: 1/3;
+            /* iska matlab hee one seeh leke three tak column occupy kare */
+            /*  Horizontal check for column*/
+
+            /* Mein yee properties indepently bhi likh sakhta huu bro okk  */
+            /* grid-row-start:1;
+            grid-row-end:2; */
+            /* Grid independent properties
+            and some goes for column too 
+            grid-column-start:1;
+            grid-column-end:2;*/
+
+            /* Tum aesha bhi krr shakte hoo */
+            /* grid-column:first/second; */
+            /* This will also work ok  */
+        }  
+
+        /* box 4 madhe box one laa move kel ahe okk perfectly inspect madhe bagu shakto */
+       
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+    </div>
+</body>
+</html>

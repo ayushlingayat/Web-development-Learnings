@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Await in JavaScript</title>
+</head>
+<body>
+    <h1>Ayush Lingayat</h1>
+    <script>
+        let heading = document.querySelector('h1');
+
+        function pro_heading(color , time){
+            return new Promise((resolve , reject)=>{
+                setTimeout(()=>{
+                    h1.style.color = color;
+                    console.log(`The color is ${color}`);
+                    resolve('Color Is set successfully')
+                } ,time)
+            });
+        }
+
+
+        async function giveColor(){
+            await pro_heading('red',1000);
+            await pro_heading('purple',1000);
+            await pro_heading('blue',1000);
+            await pro_heading('green',1000);
+        }
+    </script>
+</body>
+</html>

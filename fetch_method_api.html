@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Method API Usuage</title>
+</head>
+<body>
+    <h1>Fetch Method API Use</h1>
+    <script>
+        // let url = 'https://catfact.ninja/fact';
+
+        // //Now using the fetch method 
+
+        // fetch(url).then((res)=>{
+        //     // console.log(res);
+        //     // console.log(res.json());
+        //     return res.json();
+        // })
+        // .then((data)=>{
+        //     console.log("data 1 is " , data.fact);
+        //     fetch(url);
+        // })
+        // .then((res_2)=>{
+        //     // console.log(res_2);
+        //     return res_2.json();
+        // })
+        // .then((data_2)=>{
+        //     console.log("data 2 is " , data_2.fact)
+        // })
+        // .catch((err)=>{
+        //     console.log(err);
+        // });
+
+
+
+        let url = 'https://catfact.ninja/fact';
+
+fetch(url)
+    .then((res) => {
+        return res.json();
+    })
+    .then((data) => {
+        console.log("data 1 : ", data.fact);
+        return fetch(url); // Return the fetch promise
+    })
+    .then((res_2) => {
+        return res_2.json();
+    })
+    .then((data_2) => {
+        console.log("data 2 : ", data_2.fact);
+    })
+    .catch((err) => {
+        console.log(err);
+    });
+
+    </script>
+</body>
+</html>

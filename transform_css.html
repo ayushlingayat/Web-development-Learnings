@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform in CSS</title>
+    <style>
+        .container{
+            height: 50vh;
+            border:2px solid red;
+            width: 470px;
+            margin :0px 5px;
+        }
+        .box{
+            height: 40px;
+            width: 40px;
+            margin: 34px 10px;
+            background-color: yellowgreen;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            /* Now transform values */
+            transform:rotate(30deg);
+            transform: rotate(0.25turn);
+            /* 90 degree madhe phirel okk */
+            transform:rotate(.5turn);
+            /* Direct ulta turn hoil okk 180 deg rotation hoil */
+
+            transform: rotate(0.125);
+            /* it will rotate in 45 degree direction */
+
+
+            /* Rotation on the axis okk  */
+
+            transform:rotateX(90deg); 
+            /* Haa rotate hoil x axis vrr khachya side laa okk */
+            
+            transform:rotateY(56deg);
+            /* Haa rotate hoil y axis vrr right side laa okk */
+
+            transform:rotateZ(56deg);
+            /* Haa z axis tuch ground plane vrr rotate hoto okk */
+
+            transform:scale(1.6);   
+            /*  Scale is is to make object bigger or smaller*/
+            /* Scale nhi object jeva css apply krt ahe mothi kiya choti hote */
+
+            /* yaat pnn x y ann z scale astat okk  */
+            transform:scaleX(1);
+            transform:scaleY(1);
+            transform:scaleZ(1);
+
+            /* Scale 3d pnn ek aste okk  */
+
+            /* atta skew okk */
+            transform:skew(23deg);
+            transform: skewX(23deg);
+            transform: skewY(23deg);
+
+            /* Skew does not work on z-axis */
+
+
+
+            /* saglyat jast use honaari property translate ahe okk laksht tevaych nahami  */
+            transform:translate(100%);
+            /* Elements push hona type okk */
+            transform: translateX(34px);    
+            /* it goes to right */
+            transform: translateY(34px);
+            /* it goes down */
+
+
+            /* jeva multiple transform property lavayche asel teva spaces nhi lavta khali bagh ayu */
+
+            transform:translateY(100%) skew(23deg) scale(1.2);
+
+
+            /* Transform origin ek aeshi property ahe jyat naa rotion konchya orgin varun hot ahe tee dakhvti okk */
+            transform-origin: 23%  34%;
+            /* percentage madhe deun takaychi ann visaye close karaycha  */
+            /* hee naa values x ani y madhe ghete okk */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Ayu
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Responsiveness</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* .parent{
+            height: 500px;
+            width: 500px;
+            background-color: red;
+        } */
+        .parent{
+            height: 30vw;
+            width: 30vw;
+            background-color: red;
+        }
+        /* .child{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(0, 110, 255);
+        } */
+        .child{
+            height: 50%;     
+            /* 50% according to the parent  */
+            width: 50%;
+             /* 50% according to the parent  */
+            background-color: rgb(0, 110, 255);
+        }
+
+        .buddy{
+            height: 10vw;
+        }
+
+
+        /* px : humesha fixed unit rehte apen parent div kee pixel change bhi kiye tho child kee pixel pee farak nhi padega  */
+
+        /* pecent % ==> Percent kaa matlab hota hee according to the parent okk */
+
+
+        /* vw aur vh kafi important part play karte hee jab hum responsiveness karte hee website kaa koi  */
+
+        /* vw use kiya toh according to the size khud koo change karega joo bhi values humne vw mein diye vooh  */
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+
+        </div>
+    </div>
+
+    <h1 class="buddy">Hello Buddy I am Ayush !</h1>
+</body>
+</html>

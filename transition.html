@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition in HTML</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            width: 80vw;
+            height: 60vh;
+            /* margin: 3px 10px; */
+            border: 2px solid black;
+            background-color: royalblue;
+           
+        }
+        .box{
+            width: 70px;
+            height: 70px;
+            /* margin: 3px; */
+            border: 2px solid black;
+            background-color: rgb(255, 89, 175);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            /* atta transition che 4 properties ahe okk  */
+
+
+            /* 1. transition-property
+            2.transition-duration
+            3.transition-timing-function
+            4.transition-delay */
+
+
+            /* atta use karu okk apen hee  */
+
+            /* transition-property:transform; */
+            /* transition: all; */
+          
+          
+          
+            /* transition: background-color,transform;
+            transition-duration:5s;
+            transition-timing-function:ease-in-out;
+            transition-delay:1s; */
+
+
+
+            /* shorthand property  */
+
+            transition: all 3s ease-in-out 1s;
+            /* transition property  duration  timing function  delay time */
+            
+        }
+
+        #translate{
+            transform: translatex(10vw) translateY(10vh);
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="translate">
+            AYU
+        </div>
+    </div>
+</body>
+</html>
